@@ -1,8 +1,10 @@
-require("@nomicfoundation/hardhat-toolbox");
-require("dotenv").config()
-require("./tasks/blockNumber")
-require("hardhat-gas-reporter")
-require("solidity-coverage")
+import "@nomicfoundation/hardhat-toolbox";
+import "dotenv/config"
+import "./tasks/blockNumber"
+import "hardhat-gas-reporter"
+import "solidity-coverage"
+import "@nomiclabs/hardhat-ethers"
+import "@typechain/hardhat"
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "https://eth-sepolia.g.alchemy.com/v2/VK5LCEj2dSxYTkCvQF88bVhsVrY8dMOJ"
 const PRIVATE_KEY = process.env.PRIVATE_KEY
